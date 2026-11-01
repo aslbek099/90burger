@@ -2,7 +2,7 @@
 =============================================
 
 Papka tuzilishi:
-  public/index.html            — sayt (mijoz + "Sotuvchi uchun" paneli)
+  index.html                   — sayt (mijoz + "Sotuvchi uchun" paneli)
   netlify/functions/order.mjs  — buyurtmani qabul qiladi (/api/order)
   netlify/functions/orders.mjs — sotuvchi paneli uchun ro'yxat/holat/o'chirish (/api/orders)
   package.json, netlify.toml   — sozlamalar
@@ -13,7 +13,7 @@ chunki funksiyalar @netlify/blobs paketini talab qiladi. Ikki yo'ldan biri:
 A) GitHub orqali (eng oson)
    1. GitHub'da yangi repozitoriy oching va shu papkadagi hamma narsani yuklang.
    2. Netlify > Add new site > Import from Git > shu repozitoriyni tanlang.
-      (Build command bo'sh, Publish directory: public — netlify.toml'da yozilgan.)
+      (Build command bo'sh, Publish directory: . — netlify.toml'da yozilgan.)
    3. Pastdagi muhit o'zgaruvchilarini qo'ying va "Deploy" qiling.
 
 B) Netlify CLI orqali
